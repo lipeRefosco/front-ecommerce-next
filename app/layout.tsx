@@ -5,6 +5,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import SearchBar from './components/SearchBar'
 import Header from './components/Header'
+import Menu from './components/Menu'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,14 +25,7 @@ export default function RootLayout({
       <Header>
         <SearchBar />
       </Header>
-      <nav className={styles.menu}>
-        <ul>
-          <li><a href="#account"><img src="#account" alt="account" /></a></li>
-          <li><a href="#favorites"><img src="#favorites" alt="favorites" /></a></li>
-          <li><a href="#categories"><img src="#categories" alt="categories" /></a></li>
-          <li><a href="#checkout"><img src="#checkout" alt="checkout" /></a></li>
-        </ul>
-      </nav>
+      <Menu />
         {children}
       </body>
     </html>

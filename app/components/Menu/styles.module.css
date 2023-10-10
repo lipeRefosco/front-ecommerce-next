@@ -1,0 +1,24 @@
+.menu {
+    width: 100%;
+    padding: 0 1rem;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu a {
+    max-width: 45px;
+    max-height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .7rem;
+    color: #333333;
+}
+
+.menu svg {
+    width: 45px;
+    height: 45px;
+}
+
