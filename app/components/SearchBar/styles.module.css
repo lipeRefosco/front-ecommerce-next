@@ -1,0 +1,30 @@
+.searchBar {
+    width: 100%;
+    position: relative;
+}
+
+.searchBar input {
+    width: 100%;
+    height: 45px;
+    padding: .5rem;
+    font-size: .7rem;
+    border-radius: .7rem;
+    background-color: #dddddd;
+    border: none;
+}
+
+.searchBar input:focus {
+    outline: 2px solid #cccccc;
+    border: 1px solid #ffffff;
+}
+
+.searchBar button {
+    height: 100%;
+    padding: 0 .6rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+}

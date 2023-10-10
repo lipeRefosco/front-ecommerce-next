@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
+button {
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+body {
+    font-size: 16px;
+}
