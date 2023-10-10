@@ -12,7 +12,7 @@ export default function Section(
 	}: Section
 ) {
 	return (
-		<section className={styles.products}>
+		<section className={styles.section}>
 			<h2>{title} - See all</h2>
 			{children}
 		</section>
