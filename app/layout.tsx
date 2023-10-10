@@ -1,6 +1,5 @@
 import './reset.css'
 import './global.css'
-import styles from './page.module.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import SearchBar from './components/SearchBar'
