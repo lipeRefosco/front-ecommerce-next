@@ -1,34 +1,29 @@
 import styles from './styles.module.css'
 import { TbShoppingBagPlus, TbShoppingBagMinus } from 'react-icons/tb'
-
-type Product = {
-  name: string,
-  previusPrice: number,
-  newPrice: number,
-  image: string,
-
-}
+import { IProduct } from '../../types/IProduct'
+import { CSSProperties } from 'react'
 
 export default function ProductCard({
-  name,
-  previusPrice,
-  newPrice,
-  image
-}: Product ) {
+  prod,
+  style,
+}: {
+  prod: IProduct,
+  style?: CSSProperties
+}) {
   return (
-    <div className={styles.productCard}>
+    <div className={styles.productCard} style={style}>
       <div className={styles.img}>
-        <img src={image} alt={name} />
+        <img src={prod.image} alt={prod.name} />
       </div>
       <div className={styles.informations}>
-        <h3>{name}</h3>
+        <h3>{prod.name}</h3>
         <div>
-          <span>R$ {previusPrice}</span>
-          <span>R$ {newPrice}</span>
+          <span>R$ {prod.previusPrice}</span>
+          <span>R$ {prod.newPrice}</span>
         </div>
-      </div>
-      <div>
-        <button><TbShoppingBagPlus /></button>
+        <div>
+          <button><TbShoppingBagPlus /></button>
+        </div>
       </div>
     </div>
   )
