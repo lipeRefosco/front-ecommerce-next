@@ -1,4 +1,25 @@
 .button {
+    width: 100%;
+    height: 45px;
     display: flex;
     gap: .5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+}
+
+.button svg {
+    width: 25px;
+    height: 25px;
+}
+
+.button.filled {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.button.outlined {
+    outline: 1px solid #333333;
 }

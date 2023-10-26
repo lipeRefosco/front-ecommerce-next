@@ -1,5 +1,5 @@
 import styles from './styles.module.css'
-import { TbShoppingBagPlus, TbShoppingBagMinus } from 'react-icons/tb'
+import { TbShoppingBagPlus } from 'react-icons/tb'
 import { IProduct } from '../../types/IProduct'
 import { CSSProperties } from 'react'
 import Button from '../Button'
@@ -23,7 +23,7 @@ export default function ProductCard({
           <span>R$ {prod.newPrice}</span>
         </div>
         <div>
-          <Button Icon={TbShoppingBagPlus} />
+          <Button Icon={TbShoppingBagPlus} style='filled' />
         </div>
       </div>
     </div>
