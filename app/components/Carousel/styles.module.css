@@ -4,16 +4,27 @@
 }
 
 .displays {
-    width: 100%;
+    width: 100vw;
     display: flex;
+    margin-left: -1rem;
     overflow-x: auto;
     position: relative;
+    gap: .5rem;
+}
+
+.displays > :first-child {
+    margin-left: 1rem;
+}
+
+.displays > :last-child {
+    margin-right: 1rem;
 }
 
 .displays img {
-    width: 100vw;
+    width: calc(100vw - 2rem);
     height: 300px;
     display: block;
+    object-fit: cover;
 }
 
 .thumbs {
@@ -26,7 +37,7 @@
     transform: translateX(-50%);
 }
 
-.thumbs span {
+.thumbs .thumb {
     width: 1rem;
     height: 1rem;
     background-color: #eeeeee;
@@ -34,10 +45,10 @@
     cursor: pointer;
 }
 
-.thumbs span:hover {
+.thumbs .thumb:hover {
     background-color: #dddddd;
 }
 
-.thumbs span:active {
+.thumbs .thumb:active {
     background-color: #cccccc;
 }
