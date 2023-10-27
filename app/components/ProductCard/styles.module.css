@@ -12,6 +12,9 @@
     max-width: 145px;
     width: 100%;
     height: 135px;
+    position: relative;
+
+    /* Style */
     background-color: #ffffff;
     border-radius: 1rem;
     overflow: hidden;
@@ -23,6 +26,12 @@
     object-fit: cover;
     object-position: center;
     display: block;
+}
+
+.productCard .img .fav_button{
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .productCard .informations {

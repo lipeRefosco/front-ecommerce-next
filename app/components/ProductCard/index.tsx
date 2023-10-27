@@ -3,6 +3,7 @@ import { TbShoppingBagPlus } from 'react-icons/tb'
 import { IProduct } from '../../types/IProduct'
 import { CSSProperties } from 'react'
 import Button from '../Button'
+import { AiOutlineHeart } from 'react-icons/ai'
 
 export default function ProductCard({
   prod,
@@ -14,6 +15,7 @@ export default function ProductCard({
   return (
     <div className={styles.productCard} style={style}>
       <div className={styles.img}>
+        <span className={styles.fav_button}><Button Icon={AiOutlineHeart} style='' /></span>
         <img src={prod.image} alt={prod.name} />
       </div>
       <div className={styles.informations}>
