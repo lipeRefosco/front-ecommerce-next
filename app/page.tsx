@@ -1,5 +1,3 @@
-import styles from './page.module.css'
-
 import Section from './components/Section'
 import Carousel from './components/Carousel'
 import Wrapper from './components/Section/Wrapper'
@@ -12,7 +10,7 @@ import { carouselData } from './fakedatas/carousel'
 
 export default function Home() {
   return (
-    <main className={styles.main}>
+    <>
       <Carousel items={carouselData} />
       <Section title="T-Shirts">
         <Wrapper>
@@ -23,6 +21,6 @@ export default function Home() {
           <ProductCardWide prod={products[1]} />
         </Wrapper>
       </Section>
-    </main>
+    </>
   )
 }
