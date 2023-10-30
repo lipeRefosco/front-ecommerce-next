@@ -1,11 +1,11 @@
-import { IProduct } from "@/app/types/IProduct";
+import { Product } from "@/app/types/Product";
 import ProductCard from "../ProductCard";
 
 
 export default function ProductCardWide({
     prod
 }: {
-    prod: IProduct
+    prod: Product
 }) {
     return <ProductCard
         style={{flexDirection: 'row'}}

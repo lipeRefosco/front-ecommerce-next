@@ -1,6 +1,6 @@
-import { IProduct } from "../types/IProduct";
+import { Product } from "../types/Product";
 
-export const products: IProduct[] = Array.from({length: 5}, (_,i) => {
+export const products: Product[] = Array.from({length: 5}, (_,i) => {
     return {
         name: `Product name ${i}`,
         previusPrice: 100,

@@ -1,6 +1,6 @@
 import styles from './styles.module.css'
 import { TbShoppingBagPlus } from 'react-icons/tb'
-import { IProduct } from '../../types/IProduct'
+import { Product } from '../../types/Product'
 import { CSSProperties } from 'react'
 import Button from '../Button'
 import { AiOutlineHeart } from 'react-icons/ai'
@@ -9,7 +9,7 @@ export default function ProductCard({
   prod,
   style,
 }: {
-  prod: IProduct,
+  prod: Product,
   style?: CSSProperties
 }) {
   return (
