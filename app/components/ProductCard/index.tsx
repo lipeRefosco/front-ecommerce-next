@@ -21,8 +21,8 @@ export default function ProductCard({
       <div className={styles.informations}>
         <h3>{prod.name}</h3>
         <div>
-          <span>R$ {prod.previusPrice}</span>
-          <span>R$ {prod.newPrice}</span>
+          <span>R$ {prod.previusPrice.toLocaleString('pt-br', {minimumFractionDigits: 2})}</span>
+          <span>R$ {prod.newPrice.toLocaleString('pt-br', {minimumFractionDigits: 2})}</span>
         </div>
         <div>
           <Button Icon={TbShoppingBagPlus} style='filled' />
