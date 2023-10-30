@@ -4,6 +4,7 @@ import { Product } from '../../types/Product'
 import { CSSProperties } from 'react'
 import Button from '../Button'
 import { AiOutlineHeart } from 'react-icons/ai'
+import formatMoneyToReal from '@/app/utils/formatMoneyToReal'
 
 export default function ProductCard({
   prod,
@@ -21,8 +22,8 @@ export default function ProductCard({
       <div className={styles.informations}>
         <h3>{prod.name}</h3>
         <div>
-          <span>R$ {prod.previusPrice.toLocaleString('pt-br', {minimumFractionDigits: 2})}</span>
-          <span>R$ {prod.newPrice.toLocaleString('pt-br', {minimumFractionDigits: 2})}</span>
+          <span>R$ {formatMoneyToReal(prod.previusPrice)}</span>
+          <span>R$ {formatMoneyToReal(prod.newPrice)}</span>
         </div>
         <div>
           <Button Icon={TbShoppingBagPlus} style='filled' />
