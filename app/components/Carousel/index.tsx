@@ -12,8 +12,8 @@ export default function Carousel({
 		<section className={styles.highlights}>
 			<div className={styles.displays}>
 				{items.map((item: Carousel) => (
-					<span id={'highlights-' + item.id}>
-						<a key={item.id} href={item.url_page}>
+					<span key={item.id} id={'highlights-' + item.id}>
+						<a href={item.url_page}>
 							<img src={item.url_img} alt={item.alt_img} />
 						</a>
 					</span>
@@ -22,7 +22,7 @@ export default function Carousel({
 			<div className={styles.thumbs}>
 				{items.map((item: Carousel) => (
 					<a key={item.id}
-						href={'#highlights-' + item.id} >
+						href={'#highlights-' + item.id}>
 						<span className={styles.thumb}></span>
 					</a>
 				))}
