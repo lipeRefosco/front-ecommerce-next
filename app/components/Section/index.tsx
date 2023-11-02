@@ -2,7 +2,7 @@ import styles from "./styles.module.css"
 
 type Section = {
 	children: React.ReactNode,
-	title: string
+	title?: string
 }
 
 export default function Section(
@@ -13,7 +13,9 @@ export default function Section(
 ) {
 	return (
 		<section className={styles.section}>
-			<h2>{title} - See all</h2>
+			{title
+			? <h2>{title} - See all</h2>
+			: ''}
 			{children}
 		</section>
 	)
