@@ -6,6 +6,7 @@ import SearchBar from './components/SearchBar'
 import Header from './components/Header'
 import Menu from './components/Menu'
 import styles from './layout.module.css'
+import BackButton from './components/BackButton'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,15 +15,16 @@ export const metadata: Metadata = {
   description: 'Self studie about how create a e-commerce with NextJS',
 }
 
-export default function RootLayout({
-  children,
-}: {
+interface IRootLayout {
   children: React.ReactNode
-}) {
+}
+
+export default function RootLayout({children}: IRootLayout ) {
   return (
     <html lang="en">
       <body className={inter.className}>
         <Header>
+          <BackButton />
           <SearchBar />
         </Header>
         <Menu />
