@@ -5,6 +5,44 @@
 }
 
 .section h2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .5rem;
     font-size: 1.3rem;
     margin: .6rem 0;
+}
+
+.section h2 a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+    font-size: 1rem;
+    color: #333333;
+    text-decoration: none;
+    transition: gap 250ms ease-in-out;
+
+}
+
+.section h2 a::before {
+    content: ' ';
+    width: 10px;
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    border-bottom: 1px solid #333333;
+    transition: width 250ms ease-in-out;
+}
+
+
+/* hovers */
+
+.section h2 a:hover {
+    gap: .5rem;
+}
+
+.section h2 a:hover::before {
+    width: 70%;
 }

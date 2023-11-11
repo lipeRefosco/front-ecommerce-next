@@ -1,4 +1,6 @@
+import Link from "next/link"
 import styles from "./styles.module.css"
+import { AiOutlineArrowRight } from "react-icons/ai"
 
 type Section = {
 	children: React.ReactNode,
@@ -14,7 +16,7 @@ export default function Section(
 	return (
 		<section className={styles.section}>
 			{title
-			? <h2>{title} - See all</h2>
+			? <h2>{title} - <Link href={'./category'}>See all <AiOutlineArrowRight /></Link></h2>
 			: ''}
 			{children}
 		</section>
