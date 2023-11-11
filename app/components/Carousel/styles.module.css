@@ -8,15 +8,20 @@
     display: flex;
     margin-left: -1rem;
     overflow-x: auto;
+    scroll-snap-type: x mandatory;
     position: relative;
     gap: .5rem;
 }
 
-.displays > :first-child {
+.displays .item{
+    scroll-snap-align: center;
+}
+
+.displays .item:first-child {
     margin-left: 1rem;
 }
 
-.displays > :last-child {
+.displays .item:last-child {
     margin-right: 1rem;
 }
 
