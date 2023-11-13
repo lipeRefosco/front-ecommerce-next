@@ -10,6 +10,9 @@ export default function ProductCardWide({
 }) {
 
     const custonStyle: CSSProperties = {
+        minWidth: '328px',
+        maxWidth: '328px',
+        maxHeight: '155px',
         flexDirection: 'row',
         flexGrow: 1
     }
